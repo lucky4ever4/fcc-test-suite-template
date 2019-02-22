@@ -1,4 +1,18 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+* {
+  outline: solid 0.25rem hsla(210, 100%, 100%, 0.5); }
+}
+
+body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
 #nav-bar {
+display: inline-flex;
 position:fixed;
 }
 
@@ -8,21 +22,14 @@ body {
   color: black;
 }
 
-/* On screens that are 992px wide or less, the background color is blue */
-@media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
-    color: white;
-  }
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
 }
 
-/* On screens that are 600px wide or less, the background color is olive */
-@media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
-    color: white;
-  }
-}
+
+
 .flex-container {
   display: flex;
   background-color: DodgerBlue;
@@ -34,6 +41,16 @@ body {
   padding: 20px;
   font-size: 30px;
 }
+
 #header {
-position:fixed;
-}
+position: fixed;
+  top: 0;
+  padding: 0px, 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: grey;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: Roboto;
+  color: black;}
